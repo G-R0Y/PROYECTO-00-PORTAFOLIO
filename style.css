@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', cursive;
+    list-style: none;
+}
+
+:root {
+    --width-desktop: 1440px;
+    --text-color: #f0f8ff;
+}
+
+body {
+    background-color: #686868;
+    height: 150vh;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+/* ////////////////////////////// */
+/* //////////ENCABEZADO////////// */
+/* ////////////////////////////// */
+
+
+.logo img {
+    display: flex;
+    width: 70px;
+    background-color: rgba(224, 224, 207, 0.185);
+    border-radius: 50px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--width-desktop);
+    margin: auto;
+    font-size: 20px;
+    height: 100px;
+    padding-left: 20px;
+}
+
+/* .global {
+    height: 110px;
+    width: 100%;
+    background: linear-gradient(to right, #62BEF6, #EC7082); 
+    position: fixed;
+    z-index: 10;
+    
+} */
+
+.fondo {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-image: linear-gradient(to right, #ec2f4b5d, #009dff52), url(./images/fondo-cabeza.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.wave {
+    width: 100%;
+    height: 90vh;
+}
+
+.icon-menu {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    color: var(--text-color);
+    padding-right: 25px;
+    gap: 20px;
+
+}
+
+.nav .nav__list {
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.nav__list:hover {
+    text-decoration: underline rgb(235, 235, 18) 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+/* ////////////////////////////// */
+/* //////////  CUERPO  ////////// */
+/* ////////////////////////////// */
+
+.cuerpo {
+    /* border: solid 1px red; */
+    /* height: 500px; */
+    max-width: var(--width-desktop);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    z-index: 5;
+
+}
+
+
+.datos {
+    /* border: solid 1px blue; */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin-left: 15px;
+    justify-content: center;
+
+
+}
+
+.datos p {
+    /* border: solid 1px rgb(92, 216, 148); */
+    font-size: 50px;
+    width: fit-content;
+    font-weight: bold;
+    color: var(--text-color);
+    padding-left: 40px;
+}
+
+.datos .nombre {
+    font-size: 80px;
+    color: rgb(59, 13, 13);
+    padding-left: 0px;
+}
+
+.images {
+    width: 50%;
+    height: 100%;
+    margin-right: 25px;
+    position: relative;
+   
+}
+
+.images div {
+
+    transform: rotateY(-20deg) rotateX(20deg);
+    transform-origin: left bottom;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+
+.images div:hover {
+    transform: rotateY(0deg) rotateX(0deg);
+    filter: brightness(130%) saturate(120%)
+}
+
+.images:hover .img1{
+    transition-delay: 0.1;
+    transform: translate(0px, 30px);
+}
+
+.images:hover .img2{
+    transition-delay: 0.5;
+    transform: translate(-50px, 0px);
+}
+
+.images:hover .img3{
+    transition-delay: 0.1;
+    transform: translate(0px, -30px);
+}
+
+.images .img1 {
+    position: absolute;
+    width: 412px;
+    height: 274px;
+    left: 375px;
+    top: 150px;
+    background: url(./svg/dron.svg), rgba(39, 20, 62, 0.3);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    background-size: cover;
+
+}
+
+.images .img2 {
+    position: absolute;
+    width: 401px;
+    height: 223px;
+    left: -100px;
+    top: 250px;
+    background: url(./svg/design.svg), rgba(39, 20, 62, 0.3);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.images .img3 {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    background: url(./svg/desk.svg), rgba(23, 12, 61, 0.5);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(27.3844px);
+    border-radius: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.about_me {
+    margin: auto;
+    max-width: var(--width-desktop);
+    margin-top: 200px;
+    /* background-color: #e3e3e3; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.intro {
+    width: 50%;
+    font-family: 'Tilt Neon', cursive;
+    text-align: justify;
+    padding-bottom: 200px;
+    font-size: 23px;
+}
+
+.intro .titulo {
+    font-size: 40px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 27px;
+}
