@@ -110,7 +110,7 @@ a {
     margin: auto;
     display: flex;
     z-index: 5;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 
 
@@ -568,7 +568,7 @@ a {
         width: calc(100% - 20px);
         margin: 30px 10px 0px 10px;
         height: 200px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -602,7 +602,7 @@ a {
     }
 
     .images {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: calc(100% - 20px);
         margin: 10px;
         height: 150px;
@@ -670,11 +670,5 @@ a {
         margin-top: 100px;
     }
     @media (max-width: 425px) {
-    
-        .contact {
-            border: 1px solid red;
-        }
-        .about_me  {
-            border: 1px solid red;
-        }
+
     }
