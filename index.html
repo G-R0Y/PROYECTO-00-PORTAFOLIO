@@ -33,13 +33,15 @@
     <main class="cuerpo">
         <div class="datos">
             <p class="nombre">Gianroy <br> Huaracca</p>
-            <p class="profesion">Front-end <br> Developer // </p>
+            <p class="profesion">Front-end <br> Developer <br></p>
             <p class="profesion2">Geophysical <br> Engineer</p>
         </div>
         <div class="images">
             <div class="img3"></div>
             <div class="img2"></div>
             <div class="img1"></div>
+            <div class="img_1"></div>
+            <div class="img_2"></div>
         </div>
 
     </main>
@@ -69,23 +71,23 @@
 
     <section class="contact" id="contact">
         <span class="borderojo"></span>
-        <form>
+        <form action="https://formsubmit.co/ghuaraccaarqque@gmail.com" method="POST">
             
             <h2>Contact us</h2>
             <div class="inputbox">
-                <input type="text" required="required">
+                <input type="text" required="required" name="Name">
                 <span>Name</span>
                 <i></i>
             </div>
 
             <div class="inputbox">
-                <input type="text" required="required">
+                <input type="text" required="required" name="Email">
                 <span>Email</span>
                 <i></i>
             </div>
 
             <div class="inputbox">
-                <input type="tel" required="required">
+                <input type="tel" required="required" name="Phone">
                 <span>Phone</span>
                 <i></i>
             </div>
@@ -96,6 +98,9 @@
             <div class="button">
                 <button> SEND</button>
             </div>
+
+            <input type="hidden" name="_next" value="https://gianroyhuaracca.vercel.app/">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </section>
 
