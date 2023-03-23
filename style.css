@@ -659,16 +659,30 @@ a {
 
     .intro {
         width: 80%;
+   
     }
-
-    .intro .titulo {
-        font-size: 40px;
-        margin-bottom: 30px;
+    .intro .titulo{
+        font-size: 25px;
+    }
+    .intro h4{
+        font-size: 15px;
     }
 
     .contact {
         margin-top: 100px;
     }
+
+
     @media (max-width: 425px) {
 
+        .contact {
+            position: relative;
+            width: 300px;
+            
+        }
+
+        .contact form h2 {
+            font-size: 35px;
+            margin: auto;
+        }
     }
