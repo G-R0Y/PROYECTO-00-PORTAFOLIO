@@ -15,8 +15,9 @@
 
 body {
     background-color: #686868;
-    /* height: 150vh; */
-    padding-bottom: 150px;
+    
+    border: 1px solid red;
+    overflow-x: hidden;
 }
 
 a {
@@ -31,9 +32,10 @@ a {
 
 .logo img {
     display: flex;
-    width: 70px;
+    width: 150px;
     background-color: rgba(224, 224, 207, 0.185);
     border-radius: 50px;
+    /* border: 1px solid red; */
 }
 
 .encabezado {
@@ -110,7 +112,7 @@ a {
     margin: auto;
     display: flex;
     z-index: 5;
-    /* border: 5px solid red; */
+    border: 5px solid red;
 }
 
 
@@ -236,12 +238,12 @@ a {
 .about_me {
     margin: auto;
     max-width: var(--width-desktop);
-    margin-top: 300px;
+    margin-top: 100px;
     /* background-color: #e3e3e3; */
     display: flex;
     justify-content: center;
     padding-top: 150px;
-
+    border: 5px solid red;
 }
 
 .intro {
@@ -271,8 +273,8 @@ a {
     margin-top: 200px;
     background: #1c1c1c;
     border-radius: 20px;
-    overflow: hidden;
-    /* inset: 4px; */
+    overflow: hidden; 
+    
 }
 
 .borderojo {
@@ -458,6 +460,24 @@ a {
 
 }
 
+footer{
+    /* border: 1px solid red; */
+    margin-top: 200px;
+    height: 150px;
+    background-color: #1c1c1c;
+    text-align: center;
+    padding: 15px;
+    color: var(--text-color);
+    
+}
+
+/* //////////////////////////////////////
+////////////////////////////////////////
+/////////   RESPONSIVE   /////////
+////////////////////////////////////////
+ /////////////////////////////////////*/
+
+
 @media (max-width: 1300px) {
 
     .cuerpo {
@@ -568,7 +588,6 @@ a {
         width: calc(100% - 20px);
         margin: 30px 10px 0px 10px;
         height: 200px;
-        /* border: 1px solid red; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -602,7 +621,6 @@ a {
     }
 
     .images {
-        /* border: 1px solid red; */
         width: calc(100% - 20px);
         margin: 10px;
         height: 150px;
@@ -677,7 +695,7 @@ a {
 
         .contact {
             position: relative;
-            width: 300px;
+            width: 100%;
             
         }
 
@@ -686,3 +704,4 @@ a {
             margin: auto;
         }
     }
+}
